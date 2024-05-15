@@ -6,7 +6,7 @@ interface SelectCardProps { }
 
 const SelectCard: React.FC<SelectCardProps> = () => {
     return (
-        <div className="grid gap-3 sm:grid-cols-3 border-gray-500 border-[1px] rounded-[20px] h-auto py-5">
+        <div className="grid gap-3 sm:grid-cols-3 border-gray-500 border-[1px] rounded-[20px]  py-5">
             <Image src="/images/funnel-image.png"
                 width={500}
                 height={500}

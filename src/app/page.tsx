@@ -1,4 +1,3 @@
-import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import SelectCard from "./components/SelectCard/SelectCard";
 
@@ -33,7 +32,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
+
 
     </main>
   );
