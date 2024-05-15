@@ -1,27 +1,25 @@
-"use client"
 import React from "react";
 
+interface HeaderProps { }
 
-const Header = () => {
+const Header: React.FC<HeaderProps> = () => {
     return (
-        <nav className="bg-#D7DAEA-500 py-3 px-20 border-b ">
+        <nav
+            className="bg-#D7DAEA md:py-3 md:px-20 sm:py-2 border-b border-gray-200"
+        >
             <div className="flex justify-between items-center px-4 py-2">
                 <div className="flex items-center">
-                    <a href="#" className="text-xl font-medium text-#393948-500">FRANCHAIN</a>
+                    <a href="#" className="text-xl font-medium text-gray-700">
+                        FRANCHAIN
+                    </a>
                 </div>
 
-                <button className="border-2 border-blue-500 px-8 py-2 rounded-full font-medium ">Support</button>
-
-                <div className="md:hidden">
-                    <button id="menu-toggle" className="focus:outline-none">
-                        <svg className="h-6 w-6 text-white fill-current" viewBox="0 0 24 24">
-                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zM4 11h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                        </svg>
-                    </button>
-                </div>
+                <button className="border-2 border-blue-500 px-8 py-2 rounded-full font-medium ">
+                    Support
+                </button>
             </div>
         </nav>
-    )
-}
+    );
+};
 
 export default Header;
