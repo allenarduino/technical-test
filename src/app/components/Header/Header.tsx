@@ -1,23 +1,17 @@
 import React from "react";
+import LogoText from "./LogoText";
+import SupportButton from "./SupportButton";
 
 interface HeaderProps { }
 
 const Header: React.FC<HeaderProps> = () => {
     return (
         <nav
-            className="bg-#D7DAEA md:py-3 md:px-20 sm:py-2 border-b border-gray-200"
+            className="bg-#D7DAEA md:py-4 md:px-20 px-10 py-3 border-b border-gray-200  flex justify-between items-center"
         >
-            <div className="flex justify-between items-center px-4 py-2">
-                <div className="flex items-center">
-                    <a href="#" className="text-xl font-medium text-gray-700">
-                        FRANCHAIN
-                    </a>
-                </div>
+            <LogoText />
+            <SupportButton />
 
-                <button className="border-2 border-blue-500 px-8 py-2 rounded-full font-medium ">
-                    Support
-                </button>
-            </div>
         </nav>
     );
 };
