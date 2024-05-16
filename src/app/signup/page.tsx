@@ -96,6 +96,12 @@ const Signup: React.FC<SignupProps> = () => {
                                     className="border-[1px]  bg-blue-200 cursor-pointer text-white border-blue-200 md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
 
                             </div>
+
+                            <div className="text-wrapper text-[13px] py-5">
+                                By clicking “Start Application“, I agree to Mercury’s <a href="#" className="underline">Terms of Use</a>, <a href="#" className="underline"> Privacy Policy</a> and to receive electronic communication about my accounts and services per <a href="#" className="underline">Mercury’s Electronic Communications Agreement</a>, and acknowledge receipt of <a href="#" className="underline"> Mercury’s USA PATRIOT Act disclosure.</a>
+                            </div>
+
+
                         </form>
                     </div>
                 </div>
