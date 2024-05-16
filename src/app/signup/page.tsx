@@ -67,30 +67,30 @@ const Signup: React.FC<SignupProps> = () => {
                         <form>
                             <p className="py-4">First name</p>
                             <input type="text"
-                                className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+                                className="w-full  rounded-md border-[1px] border-gray-300 py-4 pl-3 text-gray-500 text-[20px] transition hover:bg-opacity-90"
 
                             />
                             <p className="py-4">Last name</p>
                             <input type="text"
-                                className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
 
                             />
 
                             <p className="py-4">Business name and HQ location</p>
                             <input type="text"
-                                className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
 
                             />
 
                             <p className="py-4">Work email</p>
                             <input type="text"
-                                className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
 
                             />
 
                             <p className="py-4">Password</p>
                             <input type="text"
-                                className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
 
                             />
 
