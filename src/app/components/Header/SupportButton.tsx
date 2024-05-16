@@ -4,7 +4,7 @@ interface SupportButtonProps { }
 
 const SupportButton: React.FC<SupportButtonProps> = () => {
     return (
-        <button className="border-[1px] border-blue-500 px-8 py-2 rounded-full font-medium">
+        <button className="border-[1px] border-blue-500 md:px-8 md:py-2 px-5 py-2 rounded-full font-medium">
             Support
         </button>
     )
