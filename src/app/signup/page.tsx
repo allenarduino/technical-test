@@ -8,8 +8,9 @@ interface SignupProps { }
 const Signup: React.FC<SignupProps> = () => {
     return (
         <>
-            <div className="fixed md:w-full min-h-[100vh] md:grid md:grid-cols-2 relative">
+            <div className=" md:w-full min-h-[100vh]  md:grid md:grid-cols-2 relative">
                 <div
+                    className="md:h-full"
                     style={{
                         background: '#f0f0f0',
                         backgroundImage: 'linear-gradient(146.36deg, #DFEAF0 7.24%, #D5E4EA 57.18%, #F4E7F4 98.87%)',
@@ -18,10 +19,9 @@ const Signup: React.FC<SignupProps> = () => {
                         borderRadius: '5px',
                     }}
                 ></div>
-                <div>Content</div>
                 <div className="absolute  w-full h-full flex justify-center items-center">
-
-                    <div className=" w-3/4 h-full grid md:grid-cols-2 border-red-500 border-2">
+                    {/*********Overlay Container Grid****************************/}
+                    <div className=" w-3/4 h-full grid md:grid-cols-2 border-red-500 border-2 md:max-w-[1300px]">
                         <div
                             className="px-10 py-5"
                             style={{
@@ -39,27 +39,73 @@ const Signup: React.FC<SignupProps> = () => {
                                 alt="logo"
                             />
 
-                            <div className="flex flex-col items-center justify-center h-[90%] w-full border-green-500 border-2">
+                            <div className="flex flex-col items-center justify-center h-[90%] w-full ">
                                 <Image
                                     src="/images/Sign up screen SVG.svg"
                                     width="0"
                                     height="0"
                                     alt="screen-image"
-                                    className=" w-[70%] border-yellow-500 border-2 min-w-[350px]"
+                                    className=" w-[75%] min-w-[350px]"
                                 />
 
-                                <div className="text-wrapper w-[65%] min-w-[350px] flex text-center border-blue-500 border-2">
+                                <div className="text-wrapper w-[65%] min-w-[350px] flex text-center">
                                     <p className="font-medium text-[30px]">Royalty collections, simplified. It's next level!</p>
                                 </div>
 
-                                <div className="text-wrapper w-[60%] min-w-[250px] flex text-center border-blue-500 border-2">
+                                <div className="text-wrapper w-[60%] min-w-[250px] py-[20px] flex text-center ">
                                     <p className="font-[500] text-[18px]">Revenue based invoice collection to make royalty collection as easy as...</p>
                                 </div>
 
                             </div>
                         </div>
                         <div>
-                            Sign up form
+                            <div className="w-full flex justify-end px-[30px] py-[30px]"><span>Login</span></div>
+                            <div>
+                                <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10">
+                                    <p className="font-medium text-[35px]">Get started with Franchain</p>
+                                </div>
+                                <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10 py-3">
+                                    <p className="font-[300] text-[18px]">Create an account in 5 minutes</p>
+                                </div>
+                            </div>
+                            <form className="py-10 px-10">
+                                <p className="py-4">First name</p>
+                                <input type="text"
+                                    className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+
+                                />
+                                <p className="py-4">Last name</p>
+                                <input type="text"
+                                    className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+
+                                />
+
+                                <p className="py-4">Business name and HQ location</p>
+                                <input type="text"
+                                    className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+
+                                />
+
+                                <p className="py-4">Work email</p>
+                                <input type="text"
+                                    className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+
+                                />
+
+                                <p className="py-4">Password</p>
+                                <input type="text"
+                                    className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
+
+                                />
+
+                                <p className="py-4 text-red-500">Password must be at least 12 characters</p>
+                                <div className="py-4">
+                                    <input type="submit"
+                                        value="Sign up"
+                                        className="border-[1px] bg-blue-500 cursor-pointer text-white border-blue-500 md:px-8 md:py-3  px-5 py-2 rounded-full font-medium" />
+
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
