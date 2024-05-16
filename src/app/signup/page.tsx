@@ -46,7 +46,7 @@ const Signup: React.FC<SignupProps> = () => {
                                 <p className="font-medium text-[35px]">Royalty collections, simplified. It's next level!</p>
                             </div>
 
-                            <div className="text-wrapper w-[60%] min-w-[250px] py-[20px] flex text-center ">
+                            <div className="text-wrapper w-[60%] min-w-[250px] px-[20px] flex text-center ">
                                 <p className="font-[500] text-[18px]">Revenue based invoice collection to make royalty collection as easy as...</p>
                             </div>
 
@@ -57,11 +57,11 @@ const Signup: React.FC<SignupProps> = () => {
                 <div className="md:h-full w-[100%] flex xl:justify-start py-24 justify-center ">
                     <div className=" lg:w-[90%] w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
                         <div>
-                            <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10 py-3">
-                                <p className="font-medium text-[35px]">Get started with Franchain</p>
+                            <div className="text-wrapper w-[95%] min-w-[350px] flex justify-start">
+                                <p className="font-medium lg:text-[30px]">Get started with Franchain</p>
                             </div>
-                            <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10 py-3">
-                                <p className="font-[300] text-[18px]">Create an account in 5 minutes</p>
+                            <div className="text-wrapper w-[95%] min-w-[350px] flex text-center">
+                                <p className="font-[300] lg:text-[18px] ">Create an account in 5 minutes</p>
                             </div>
                         </div>
                         <form>
