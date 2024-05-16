@@ -8,9 +8,20 @@ interface SignupProps { }
 const Signup: React.FC<SignupProps> = () => {
     return (
         <>
-            <div className=" md:w-full min-h-[100vh]  md:grid md:grid-cols-2 relative">
+            <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
+                <div className=" absolute w-full flex justify-center">
+                    <div className="fixed absolute md:py-4 md:px-20 px-10 py-3 max-w-[1300px]   w-full h-[100px]  flex justify-center items-center">
+                        <Image
+                            src="/images/Group 11303.png"
+                            width="27"
+                            height="27"
+                            alt="logo"
+                        />
+                        <div className="w-full cursor-pointer flex justify-end"><span>Log in  &gt;</span></div>
+                    </div>
+                </div>
                 <div
-                    className="md:h-full flex justify-end"
+                    className="h-full w-full xl:flex lg:block justify-center lg:justify-end justify-center hidden"
                     style={{
                         background: '#f0f0f0',
                         backgroundImage: 'linear-gradient(146.36deg, #DFEAF0 7.24%, #D5E4EA 57.18%, #F4E7F4 98.87%)',
@@ -19,21 +30,16 @@ const Signup: React.FC<SignupProps> = () => {
                         borderRadius: '5px',
                     }}
                 >
-                    <div className=" w-3/4 h-full border-red-500 border-2 md:max-w-[650px]">
-                        <Image
-                            src="/images/Group 11303.png"
-                            width="25"
-                            height="25"
-                            alt="logo"
-                        />
+                    <div className=" md:w-[90%] md:h-full px-[30px] py-[30px]">
 
-                        <div className="flex flex-col items-center justify-center h-[90%] w-full ">
+
+                        <div className="flex flex-col items-center justify-center h-[100%] w-full ">
                             <Image
                                 src="/images/Sign up screen SVG.svg"
                                 width="0"
                                 height="0"
                                 alt="screen-image"
-                                className=" w-[70%] min-w-[350px]"
+                                className=" w-[60%] min-w-[350px]"
                             />
 
                             <div className="text-wrapper w-[65%] min-w-[350px] flex text-center">
@@ -48,18 +54,17 @@ const Signup: React.FC<SignupProps> = () => {
                     </div>
                 </div>
 
-                <div className="md:h-full flex justify-start">
-                    <div className=" w-3/4 h-full border-red-500 border-2 md:max-w-[650px]">
-                        <div className="w-full flex justify-end px-[30px] py-[30px]"><span>Login</span></div>
+                <div className="md:h-full w-[100%] flex xl:justify-start py-24 justify-center ">
+                    <div className=" lg:w-[90%] w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
                         <div>
-                            <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10">
+                            <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10 py-3">
                                 <p className="font-medium text-[35px]">Get started with Franchain</p>
                             </div>
                             <div className="text-wrapper w-[90%] min-w-[350px] flex text-center px-10 py-3">
                                 <p className="font-[300] text-[18px]">Create an account in 5 minutes</p>
                             </div>
                         </div>
-                        <form className="py-10 px-10">
+                        <form>
                             <p className="py-4">First name</p>
                             <input type="text"
                                 className="w-full cursor-pointer rounded-md border-[1px] border-gray-300 py-4 text-white transition hover:bg-opacity-90"
@@ -105,6 +110,7 @@ const Signup: React.FC<SignupProps> = () => {
                         </form>
                     </div>
                 </div>
+
 
 
             </div>
