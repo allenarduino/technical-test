@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import SelectCard from "./components/SelectCard/SelectCard";
 
@@ -21,7 +22,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="md:w-full flex flex-col items-center">
+      <section className="md:w-full flex flex-col items-center mb-[150px]">
         <div className=" container sm:w-[90%] w-[85%] grid md:grid-cols-3  sm:grid-cols-2 grid-cols-1 gap-5">
           <SelectCard />
           <SelectCard />
@@ -31,8 +32,6 @@ export default function Home() {
           <SelectCard />
         </div>
       </section>
-
-
 
     </main>
   );
