@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import "../../../src/app/globals.css";
+//import "../../../../src/";
 import Image from "next/image";
 
 
@@ -9,17 +10,7 @@ const Signup: React.FC<SignupProps> = () => {
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
-                <div className=" absolute w-full flex justify-center">
-                    <div className="fixed absolute md:py-4 md:px-20 px-10 py-3 max-w-[1300px]   w-full h-[100px]  flex justify-center items-center">
-                        <Image
-                            src="/images/Group 11303.png"
-                            width="27"
-                            height="27"
-                            alt="logo"
-                        />
-                        <div className="w-full cursor-pointer flex justify-end"><span>Log in  &gt;</span></div>
-                    </div>
-                </div>
+
                 <div
                     className="h-full w-full xl:flex lg:block justify-center lg:justify-end hidden"
                     style={{

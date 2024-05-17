@@ -1,25 +1,15 @@
+"use client";
 import React from "react";
-import "../../../src/app/globals.css";
+//import "../../../src/app/globals.css";
 import Image from "next/image";
 
 
-interface CheckEmailProps { }
+interface ConfirmationProps { }
 
-const CheckEmail: React.FC<CheckEmailProps> = () => {
+const Confirmation: React.FC<ConfirmationProps> = () => {
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
-                <div className=" absolute w-full flex justify-center">
-                    <div className="fixed absolute md:py-4 md:px-20 px-10 py-3 max-w-[1300px]   w-full h-[100px]  flex justify-center items-center">
-                        <Image
-                            src="/images/Group 11303.png"
-                            width="27"
-                            height="27"
-                            alt="logo"
-                        />
-                        <div className="w-full cursor-pointer flex justify-end"><span>Log in  &gt;</span></div>
-                    </div>
-                </div>
                 <div
                     className="h-full w-full xl:flex lg:block justify-center lg:justify-end hidden"
                     style={{
@@ -55,22 +45,33 @@ const CheckEmail: React.FC<CheckEmailProps> = () => {
                 </div>
 
                 <div className="md:h-full w-[100%]  flex xl:justify-start py-24 justify-center">
-                    <div className=" lg:w-[90%] flex flex-col  py-5 md:justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
+                    <div className=" lg:w-[90%] flex flex-col py-10 md:justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
                         <div>
                             <div className="text-wrapper w-[100%] min-w-[350px] flex justify-start">
-                                <p className="font-medium lg:text-[30px]">Check your email</p>
-                            </div>
-                            <div className="text-wrapper w-[95%]  flex text-start">
-                                <p className="font-[300] lg:text-[18px] ">Thanks! If {"{email}"} matches an email address we have on file, then we've sent you an email containing further instructions for resetting your password.
-                                </p>
-                            </div>
-
-                            <div className="text-wrapper w-[95%] flex text-start pt-4">
-                                <p className="font-[300] lg:text-[18px] ">If you haven't received an email in 5 minutes, check your spam resend or try a different email address.</p>
+                                <p className="font-medium lg:text-[30px]">Check your email for a code</p>
                             </div>
 
                         </div>
+                        <form>
+                            <p className="py-4">Enter code</p>
+                            <input type="numer"
+                                className="w-full  rounded-md border-[1px] border-gray-300 py-4 pl-3 text-gray-500 text-[20px] transition hover:bg-opacity-90"
 
+                            />
+
+                            <div className="py-4">
+                                <input type="submit"
+                                    value="Continue"
+                                    className="border-[1px]  bg-blue-200 cursor-pointer text-white border-blue-200 md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
+
+                            </div>
+
+                            <div className="text-wrapper text-[13px] py-5">
+                                Didn’t receive a code? Check your spam folder or <a href="#" className="underline">click to resend</a>
+                            </div>
+
+
+                        </form>
                     </div>
                 </div>
 
@@ -85,4 +86,4 @@ const CheckEmail: React.FC<CheckEmailProps> = () => {
         </>
     )
 }
-export default CheckEmail;
+export default Confirmation;
