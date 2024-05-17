@@ -54,17 +54,17 @@ const Confirmation: React.FC<ConfirmationProps> = () => {
                     </div>
                 </div>
 
-                <div className="md:h-full w-[100%]  flex xl:justify-start py-24 justify-center border-red-500 border-2">
-                    <div className=" lg:w-[90%] flex flex-col  justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px] border-green-500 border-2">
+                <div className="md:h-full w-[100%]  flex xl:justify-start py-24 justify-center">
+                    <div className=" lg:w-[90%] flex flex-col  justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
                         <div>
-                            <div className="text-wrapper w-[100%] min-w-[350px] flex justify-start border-yellow-500 border-2">
+                            <div className="text-wrapper w-[100%] min-w-[350px] flex justify-start">
                                 <p className="font-medium lg:text-[30px]">Check your email for a code</p>
                             </div>
 
                         </div>
                         <form>
                             <p className="py-4">Enter code</p>
-                            <input type="text"
+                            <input type="numer"
                                 className="w-full  rounded-md border-[1px] border-gray-300 py-4 pl-3 text-gray-500 text-[20px] transition hover:bg-opacity-90"
 
                             />
