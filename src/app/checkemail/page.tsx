@@ -3,9 +3,9 @@ import "../../../src/app/globals.css";
 import Image from "next/image";
 
 
-interface ConfirmationProps { }
+interface CheckEmailProps { }
 
-const Confirmation: React.FC<ConfirmationProps> = () => {
+const CheckEmail: React.FC<CheckEmailProps> = () => {
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
@@ -55,33 +55,22 @@ const Confirmation: React.FC<ConfirmationProps> = () => {
                 </div>
 
                 <div className="md:h-full w-[100%]  flex xl:justify-start py-24 justify-center">
-                    <div className=" lg:w-[90%] flex flex-col py-10 md:justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
+                    <div className=" lg:w-[90%] flex flex-col  py-5 md:justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
                         <div>
                             <div className="text-wrapper w-[100%] min-w-[350px] flex justify-start">
-                                <p className="font-medium lg:text-[30px]">Check your email for a code</p>
+                                <p className="font-medium lg:text-[30px]">Check your email</p>
+                            </div>
+                            <div className="text-wrapper w-[95%]  flex text-start">
+                                <p className="font-[300] lg:text-[18px] ">Thanks! If {"{email}"} matches an email address we have on file, then we've sent you an email containing further instructions for resetting your password.
+                                </p>
+                            </div>
+
+                            <div className="text-wrapper w-[95%] flex text-start pt-4">
+                                <p className="font-[300] lg:text-[18px] ">If you haven't received an email in 5 minutes, check your spam resend or try a different email address.</p>
                             </div>
 
                         </div>
-                        <form>
-                            <p className="py-4">Enter code</p>
-                            <input type="numer"
-                                className="w-full  rounded-md border-[1px] border-gray-300 py-4 pl-3 text-gray-500 text-[20px] transition hover:bg-opacity-90"
 
-                            />
-
-                            <div className="py-4">
-                                <input type="submit"
-                                    value="Continue"
-                                    className="border-[1px]  bg-blue-200 cursor-pointer text-white border-blue-200 md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
-
-                            </div>
-
-                            <div className="text-wrapper text-[13px] py-5">
-                                Didn’t receive a code? Check your spam folder or <a href="#" className="underline">click to resend</a>
-                            </div>
-
-
-                        </form>
                     </div>
                 </div>
 
@@ -96,4 +85,4 @@ const Confirmation: React.FC<ConfirmationProps> = () => {
         </>
     )
 }
-export default Confirmation;
+export default CheckEmail;

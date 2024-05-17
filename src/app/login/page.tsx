@@ -3,9 +3,9 @@ import "../../../src/app/globals.css";
 import Image from "next/image";
 
 
-interface SignupProps { }
+interface LoginProps { }
 
-const Signup: React.FC<SignupProps> = () => {
+const Login: React.FC<LoginProps> = () => {
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
@@ -54,56 +54,35 @@ const Signup: React.FC<SignupProps> = () => {
                     </div>
                 </div>
 
-                <div className="md:h-full w-[100%] flex xl:justify-start py-24 justify-center ">
-                    <div className=" lg:w-[90%] w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
+                <div className="md:h-full w-[100%]  flex xl:justify-start py-24 justify-center">
+                    <div className=" lg:w-[90%] flex flex-col py-5 md:justify-center w-[90%] max-w-[600px] h-full lg:max-w-[650px]">
                         <div>
-                            <div className="text-wrapper w-[95%] min-w-[350px] flex justify-start">
-                                <p className="font-medium lg:text-[30px]">Get started with Franchain</p>
+                            <div className="text-wrapper w-[100%] min-w-[350px] flex justify-start">
+                                <p className="font-medium lg:text-[30px]">Login to Franchain</p>
                             </div>
-                            <div className="text-wrapper w-[95%] min-w-[350px] flex text-center">
-                                <p className="font-[300] lg:text-[18px] ">Create an account in 5 minutes</p>
-                            </div>
+
                         </div>
                         <form>
-                            <p className="py-4">First name</p>
-                            <input type="text"
+                            <p className="py-4">Email</p>
+                            <input type="email"
                                 className="w-full  rounded-md border-[1px] border-gray-300 py-4 pl-3 text-gray-500 text-[20px] transition hover:bg-opacity-90"
 
                             />
-                            <p className="py-4">Last name</p>
-                            <input type="text"
-                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
-
-                            />
-
-                            <p className="py-4">Business name and HQ location</p>
-                            <input type="text"
-                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
-
-                            />
-
-                            <p className="py-4">Work email</p>
-                            <input type="email"
-                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
-
-                            />
-
                             <p className="py-4">Password</p>
                             <input type="password"
-                                className="w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-4  transition hover:bg-opacity-90"
+                                className="w-full  rounded-md border-[1px] border-gray-300 py-4 pl-3 text-gray-500 text-[20px] transition hover:bg-opacity-90"
 
                             />
 
-                            <p className="py-4 text-red-500">Password must be at least 12 characters</p>
                             <div className="py-4">
                                 <input type="submit"
-                                    value="Sign up"
+                                    value="Login"
                                     className="border-[1px]  bg-blue-200 cursor-pointer text-white border-blue-200 md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
 
                             </div>
 
                             <div className="text-wrapper text-[13px] py-5">
-                                By clicking “Start Application“, I agree to Mercury’s <a href="#" className="underline">Terms of Use</a>, <a href="#" className="underline"> Privacy Policy</a> and to receive electronic communication about my accounts and services per <a href="#" className="underline">Mercury’s Electronic Communications Agreement</a>, and acknowledge receipt of <a href="#" className="underline"> Mercury’s USA PATRIOT Act disclosure.</a>
+                                Forgot your password? <a href="#" className="underline">click here to reset</a>
                             </div>
 
 
@@ -122,4 +101,4 @@ const Signup: React.FC<SignupProps> = () => {
         </>
     )
 }
-export default Signup;
+export default Login;
