@@ -5,9 +5,7 @@ import Signup from "../app/auth/signup/page";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-
+    <main className="pt-[120px]">
       <section className="py-7 w-full text-wrapper flex flex-col justify-center items-center">
         <div className=" sm:w-full w-full flex sm:items-center  justify-center ">
           <h2 className="font-[400] font-sans text-[20px] font-medium   leading-loose">What's your goal with Franchain?</h2>
