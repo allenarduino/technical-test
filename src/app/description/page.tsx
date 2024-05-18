@@ -30,8 +30,9 @@ const Description: React.FC<DescriptionProps> = () => {
                             objectFit="cover"
 
                         />
-                        <div className="bg-custom-gradient2 rounded-lg z-10 h-[150px] w-[80%] absolute bottom-0">
-
+                        <div className="bg-custom-gradient2 rounded-lg z-10 h-[100px] w-[80%] absolute bottom-0 px-[12px] pb-[12px] flex flex-col justify-end">
+                            <p className="text-white font-[500]">Alexandra Miller</p>
+                            <p className="text-white font-[500]">Founder @ EL&N London</p>
                         </div>
                     </div>
                 </div>
