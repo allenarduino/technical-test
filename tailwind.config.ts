@@ -22,6 +22,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        'custom-gradient2': 'linear-gradient(4.61deg, #7D97FF 3.71%, rgba(125, 151, 255, 0) 88.09%)',
         'custom-gradient': 'linear-gradient(146.36deg, #DFEAF0 7.24%, #D5E4EA 57.18%, #F4E7F4 98.87%)',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
