@@ -9,11 +9,11 @@ export default function Home() {
       <Header />
 
       <section className="py-7 w-full text-wrapper flex flex-col justify-center items-center border-red-500 border-2">
-        <div className="border-black-500 border-2 sm:w-full w-full flex sm:items-center sm:justify-center ">
-          <h2 className="font-[400] font-sans text-[25px] font-medium border-blue-500 border-2  leading-loose">What's your goal with Franchain?</h2>
+        <div className="border-black-500 border-2 sm:w-full w-full flex sm:items-center  justify-center ">
+          <h2 className="font-[400] font-sans text-[20px] font-medium border-blue-500 border-2  leading-loose">What's your goal with Franchain?</h2>
         </div>
-        <div className="sm:w-1/2 flex justify-center  border-yellow-500 border-2">
-          <p className="text-gray-500 leading-loose border-blue-500 border-2">No wrong answers here. And it doesn't matter if you change your mind later.</p>
+        <div className="sm:w-full w-1/2 min-w-[300px] flex justify-center  border-yellow-500 border-2">
+          <p className="text-wrapper text-gray-500 leading-loose border-blue-500 border-2">No wrong answers here. And it doesn't matter if you change your mind later.</p>
         </div>
       </section>
 
