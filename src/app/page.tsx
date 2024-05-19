@@ -1,4 +1,4 @@
-import Footer from "./components/Footer/Footer";
+'use client'
 import Header from "./components/Header/Header";
 import SelectCard from "./components/SelectCard/SelectCard";
 import Signup from "../app/auth/signup/page";

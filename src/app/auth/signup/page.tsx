@@ -8,7 +8,7 @@ interface SignupProps { }
 
 const Signup: React.FC<SignupProps> = () => {
     return (
-        <>
+        <main>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
 
                 <div
@@ -89,7 +89,7 @@ const Signup: React.FC<SignupProps> = () => {
                             <div className="py-4">
                                 <input type="submit"
                                     value="Sign up"
-                                    className="border-[1px]   cursor-pointer text-white md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
+                                    className="border-[1px] bg-custom-blue  cursor-pointer text-white md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
 
                             </div>
 
@@ -110,7 +110,7 @@ const Signup: React.FC<SignupProps> = () => {
 
 
 
-        </>
+        </main>
     )
 }
 export default Signup;

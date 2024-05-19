@@ -21,6 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <AuthHeader />
         {children}
+        <Footer />
       </body>
 
     </html>
