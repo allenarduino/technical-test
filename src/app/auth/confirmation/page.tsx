@@ -62,7 +62,7 @@ const Confirmation: React.FC<ConfirmationProps> = () => {
                             <div className="py-4">
                                 <input type="submit"
                                     value="Continue"
-                                    className="border-[1px]  bg-blue-200 cursor-pointer text-white border-blue-200 md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
+                                    className="border-[1px]  bg-custom-blue cursor-pointer text-white  md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
 
                             </div>
 

@@ -89,7 +89,7 @@ const Signup: React.FC<SignupProps> = () => {
                             <div className="py-4">
                                 <input type="submit"
                                     value="Sign up"
-                                    className="border-[1px]  bg-blue-200 cursor-pointer text-white border-blue-200 md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
+                                    className="border-[1px]   cursor-pointer text-white md:px-10 md:py-3  px-5 py-2 rounded-full font-medium" />
 
                             </div>
 
