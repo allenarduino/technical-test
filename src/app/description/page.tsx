@@ -7,8 +7,8 @@ interface DescriptionProps { }
 
 const Description: React.FC<DescriptionProps> = () => {
     return (
-        <section className="flex min-h-screen mt-[30px] lg:mt-[0px]  flex-col items-center lg:justify-center w-full">
-            <div className="grid lg:grid-cols-2 grid-cols-1 w-[90%] gap-4 md:w-[70%] lg:w-[80%] xl:w-[70%] pl-[15px] md:max-w-[1300px]  h-[482px]">
+        <section className="flex min-h-screen   flex-col items-center  w-full">
+            <div className="grid lg:grid-cols-2 mt-[50px] grid-cols-1 w-[90%] gap-4 md:w-[70%] lg:w-[80%] xl:w-[70%] pl-[15px] md:max-w-[1300px]  h-[482px]">
                 <div className="text-wrapper  sm:cols-span-4 flex flex-col lg:text-start text-center justify-center ">
                     <p className="font-[500] lg:text-[28px]  w-[95%]  ">
                         Franchain has helped us collect royalties locally and internationally in a way we never thought was possible
