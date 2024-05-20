@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
+import { routeData } from "@/app/utils/routeData";
 
 
 
@@ -12,16 +13,7 @@ const AuthHeader: React.FC<AuthHeaderProps> = () => {
     const pathname = usePathname();
 
 
-    // Array of objects mapping routes to their respective texts
-    const routeData = [
-        { path: '/auth/signup', text: 'Log in', href: '/auth/login' },
-        { path: '/auth/login', text: 'Create account', href: '/auth/signup' },
-        { path: '/auth/confirmation', text: 'Go back', href: '/auth/login' },
-        { path: '/auth/passwordreset', text: 'Return to login', href: '/auth/login' },
-        { path: '/auth/checkemail', text: 'Return to login', href: '/auth/login' },
-        { path: '/description', text: 'Skip to dashboard', href: '' },
-        { path: '/', text: 'Skip to dashboard', href: '' },
-    ];
+
 
     // Find the appropriate text based on the current path
     const currentRouteText = routeData.find(route => route.path === pathname)?.text || 'Log in';
