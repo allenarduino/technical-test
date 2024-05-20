@@ -31,7 +31,7 @@ const AuthHeader: React.FC<AuthHeaderProps> = () => {
 
     return (
         <div className="z-100 w-full flex justify-center">
-            <div className="md:py-4 md:px-10 px-10 py-3 max-w-[1300px]  w-full h-[100px]  flex justify-center items-center">
+            <div className="md:py-4 md:px-10 px-5 py-3 max-w-[1300px]  w-full h-[100px]  flex justify-center items-center">
                 <Image
                     src="/images/Group 11303.png"
                     width="27"
