@@ -8,7 +8,7 @@ interface SignupProps { }
 
 const Signup: React.FC<SignupProps> = () => {
     return (
-        <main>
+        <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
 
                 <div
@@ -107,10 +107,10 @@ const Signup: React.FC<SignupProps> = () => {
             </div>
 
 
+        </>
 
 
 
-        </main>
     )
 }
 export default Signup;

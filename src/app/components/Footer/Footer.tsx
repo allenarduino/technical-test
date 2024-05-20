@@ -1,9 +1,23 @@
 "use client";
 import React from "react";
+import { usePathname } from 'next/navigation';
+
 
 interface FooterProps { }
 
 const Footer: React.FC<FooterProps> = () => {
+
+    const hiddenPaths = ["/auth/signup",
+        "/auth/login",
+        "/auth/checkemail",
+        "/auth/confirmation",
+        "/auth/passwordreset"
+    ];
+    const pathname = usePathname();
+
+    if (hiddenPaths.includes(pathname)) {
+        return null;
+    }
     return (
         <footer className=" bottom-0  left-0 h-auto  w-full flex  justify-center items-center flex-col bg-white text-gray-600 py-5 flex flex-wrap justify-between border-t border-gray-200">
             <div className="text-wrapper xl:max-w-[1300px] sm:w-[90%] w-[85%]  flex justify-start items-center">
