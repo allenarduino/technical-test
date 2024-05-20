@@ -11,13 +11,13 @@ const Footer: React.FC<FooterProps> = () => {
             </div>
             <div className=" py-8 text-wrapper md:container border-blue-500 border-2 sm:w-[90%] w-[85%] flex-col flex md:flex-row font-[600]">
                 <div className="border-red-500 border-2 flex">
-                    <a href="#" className="text-gray-600 hover:text-gray-700 lg:px-10 py-1 flex ">Need help?</a>
-                    <a href="#" className="text-gray-600 hover:text-gray-700 lg:px-10 py-1 flex">Back to dashboard</a>
-                    <a href="#" className="text-gray-600 hover:text-gray-700 lg:px-10 py-1">Terms</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-700 px-4 lg:px-10 py-1 flex border-yellow-500 border-[1px] ">Need help?</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-700 px-4 lg:px-10 py-1 flex">Back to dashboard</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-700 px-4 lg:px-10 py-1">Terms</a>
                 </div>
                 <div className="border-yellow-500 border-2 flex">
-                    <a href="#" className="text-gray-600 hover:text-gray-700 lg:px-10 py-1 flex">Privacy policy</a>
-                    <a href="#" className="text-gray-600 hover:text-gray-700 lg:px-10 py-1 flex">Sign out and continue later</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-700 px-4 lg:px-10 py-1 flex">Privacy policy</a>
+                    <a href="#" className="text-gray-600 hover:text-gray-700 px-4 lg:px-10 py-1 flex">Sign out and continue later</a>
                 </div>
             </div>
         </footer>

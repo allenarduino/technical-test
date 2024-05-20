@@ -16,7 +16,7 @@ export default function Home() {
       </section>
 
       <section className="pt-[80px] sm:w-full flex flex-col items-center mb-[120px] w-full ">
-        <div className="max-w-[1300px] sm:container w-[100%] lg:w-[65%] w-full sm:w-[85%] grid  lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 grid-cols-1 sm:gap-5">
+        <div className="max-w-[1300px] sm:container w-[100%] xl:w-[65%] w-full sm:w-[85%] grid  lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 grid-cols-1 sm:gap-5">
           <SelectCard />
           <SelectCard />
           <SelectCard />
