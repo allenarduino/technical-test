@@ -5,9 +5,9 @@ import Signup from "../app/auth/signup/page";
 
 export default function Home() {
   return (
-    <main className="flex-grow flex flex-col ">
-      <section className="py-[120px] w-full text-wrapper flex flex-col justify-center items-center">
-        <div className=" sm:w-full w-full flex sm:items-center  justify-center ">
+    <main className="flex-grow flex flex-col">
+      <section className=" md:mt-[50px] w-full text-wrapper flex flex-col justify-center items-center">
+        <div className=" sm:w-full w-full flex sm:items-center justify-center ">
           <h2 className="font-[400] font-sans text-[20px] font-medium   leading-loose">What's your goal with Franchain?</h2>
         </div>
         <div className="sm:w-full w-1/2 min-w-[300px] flex justify-center ">
@@ -15,7 +15,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sm:w-full flex flex-col items-center mb-[150px] w-full ">
+      <section className="pt-[80px] sm:w-full flex flex-col items-center mb-[120px] w-full ">
         <div className=" sm:container w-[100%] sm:w-[90%] w-full sm:w-[85%] grid  lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 grid-cols-1 sm:gap-5">
           <SelectCard />
           <SelectCard />
@@ -26,5 +26,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+
   )
 }
