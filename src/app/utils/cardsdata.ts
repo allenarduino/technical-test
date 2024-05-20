@@ -1,8 +1,8 @@
 export interface CardDataType {
-    id: String,
-    image: String,
-    text: String,
-    selected: Boolean
+    id: string,
+    image: string,
+    text: string,
+    selected: boolean
 }
 
 
@@ -11,7 +11,7 @@ export const cardData: CardDataType[] = [
         id: "jfhg33456677gg",
         image: "/images/funnel-image.png",
         text: "Reduce failed payments",
-        selected: false
+        selected: true
     },
     {
         id: "jfhg334fkgjjhjghjgh56677gg",

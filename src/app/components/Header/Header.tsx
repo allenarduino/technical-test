@@ -1,18 +1,41 @@
+"use client";
 import React from "react";
-import LogoText from "./LogoText";
-import SupportButton from "./SupportButton";
+import Image from "next/image";
+import { usePathname } from 'next/navigation';
+import { routeData } from "@/app/utils/routeData";
+
+
 
 interface HeaderProps { }
 
 const Header: React.FC<HeaderProps> = () => {
-    return (
-        <nav
-            className=" w-full z-10 bg-white-500 md:py-4 md:px-20 px-10 py-3 border-b border-gray-200  flex justify-between items-center"
-        >
-            <LogoText />
-            <SupportButton />
 
-        </nav>
+    const pathname = usePathname();
+
+
+
+
+    // Find the appropriate text based on the current path
+    const currentRouteText = routeData.find(route => route.path === pathname)?.text || 'Log in';
+    const currentRoute = routeData.find(route => route.path === pathname) || { text: 'Log in >', href: '/login' };
+
+
+
+    return (
+        <div className="absolute w-full flex justify-center">
+            <div className="md:py-4 md:px-10 px-5 py-3 max-w-[1300px]  w-full h-[100px]  flex justify-center items-center">
+                <Image
+                    src="/images/Group 11303.png"
+                    width="27"
+                    height="27"
+                    alt="logo"
+                    className="z-10"
+                />
+                <a href={currentRoute.href} className="w-full cursor-pointer flex justify-end"><span>{currentRouteText}  &gt;</span></a>
+            </div>
+        </div >
+
+
     );
 };
 
