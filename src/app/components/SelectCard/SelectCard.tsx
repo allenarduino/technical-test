@@ -2,9 +2,9 @@
 import React from "react";
 import Image from "next/image";
 
-interface SelectCardProps { image: String, text: String, selected: Boolean }
+interface SelectCardProps { id: String, image: String, text: String, selected: Boolean }
 
-const SelectCard: React.FC<SelectCardProps> = ({ image, text, selected }) => {
+const SelectCard: React.FC<SelectCardProps> = ({ id, image, text, selected }) => {
 
     return (
         <div className=" flex justify-between sm:grid sm:gap-3 sm:place-items-center grid-cols-2 gap-1 sm:grid-cols-3 border-b sm:border-gray-500 sm:border-[1px] px-5 sm:rounded-[20px] sm:py-5 py-3 h-auto">
