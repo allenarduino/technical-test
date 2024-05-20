@@ -19,6 +19,8 @@ const AuthHeader: React.FC<AuthHeaderProps> = () => {
         { path: '/auth/confirmation', text: 'Go back', href: '/auth/login' },
         { path: '/auth/passwordreset', text: 'Return to login', href: '/auth/login' },
         { path: '/auth/checkemail', text: 'Return to login', href: '/auth/login' },
+        { path: '/description', text: 'Skip to dashboard', href: '' },
+        { path: '/', text: 'Skip to dashboard', href: '' },
     ];
 
     // Find the appropriate text based on the current path

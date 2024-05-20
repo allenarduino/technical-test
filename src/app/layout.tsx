@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
         <AuthHeader />
-        <main className="border-green-500 border-2 w-full h-full ">
+        <main className=" w-full h-full ">
           {children}
         </main>
         <Footer />
