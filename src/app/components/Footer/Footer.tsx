@@ -18,7 +18,10 @@ const Footer: React.FC<FooterProps> = () => {
     if (hiddenPaths.includes(pathname)) {
         return null;
     }
+
+
     return (
+
         <footer className=" bottom-0  left-0 h-auto  w-full flex  justify-center items-center flex-col bg-white text-gray-600 py-5 flex flex-wrap justify-between border-t border-gray-200">
             <div className="text-wrapper xl:max-w-[1300px] sm:w-[90%] w-[85%]  flex justify-start items-center">
                 <p>Franchain is a financial technology company, not a bank. Banking services are provided by trusted regulated banking partners including but not limited to JP Morgan, Barclays and Credit Suisse.</p>
@@ -35,6 +38,8 @@ const Footer: React.FC<FooterProps> = () => {
                 </div>
             </div>
         </footer>
+
+
     )
 
 }
