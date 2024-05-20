@@ -2,6 +2,7 @@
 import Header from "./components/Header/Header";
 import SelectCard from "./components/SelectCard/SelectCard";
 import Signup from "../app/auth/signup/page";
+import { cardData } from "./utils/cardsdata";
 
 export default function Home() {
   return (
@@ -17,12 +18,9 @@ export default function Home() {
 
       <section className="pt-[80px] sm:w-full flex flex-col items-center mb-[120px] w-full ">
         <div className="max-w-[1300px] sm:container w-[100%] xl:w-[65%] w-full sm:w-[85%] grid  lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 grid-cols-1 sm:gap-5">
-          <SelectCard />
-          <SelectCard />
-          <SelectCard />
-          <SelectCard />
-          <SelectCard />
-          <SelectCard />
+
+          {cardData.map(card => <SelectCard image={card.image} text={card.text} selected={true} />)
+          }
         </div>
       </section>
     </main>
