@@ -5,7 +5,7 @@ import Signup from "../app/auth/signup/page";
 
 export default function Home() {
   return (
-    <main className="flex-grow flex flex-col">
+    <main className="flex-grow flex flex-col ">
       <section className=" md:mt-[50px] w-full text-wrapper flex flex-col justify-center items-center">
         <div className=" sm:w-full w-full flex sm:items-center justify-center ">
           <h2 className="font-[400] font-sans text-[20px] font-medium   leading-loose">What's your goal with Franchain?</h2>
@@ -16,7 +16,7 @@ export default function Home() {
       </section>
 
       <section className="pt-[80px] sm:w-full flex flex-col items-center mb-[120px] w-full ">
-        <div className=" sm:container w-[100%] sm:w-[90%] w-full sm:w-[85%] grid  lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 grid-cols-1 sm:gap-5">
+        <div className="max-w-[1300px] sm:container w-[100%] lg:w-[65%] w-full sm:w-[85%] grid  lg:grid-cols-3 md:grid-cols-2  sm:grid-cols-2 grid-cols-1 sm:gap-5">
           <SelectCard />
           <SelectCard />
           <SelectCard />
