@@ -19,11 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+
         <AuthHeader />
-        {children}
+        <main className="border-green-500 border-2 w-full h-full ">
+          {children}
+        </main>
         <Footer />
+
+
+
       </body>
 
-    </html>
+    </html >
   );
 }

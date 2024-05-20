@@ -28,7 +28,7 @@ const AuthHeader: React.FC<AuthHeaderProps> = () => {
 
 
     return (
-        <div className=" absolute fixed z-10 w-full flex justify-center">
+        <div className="z-100 w-full flex justify-center">
             <div className="md:py-4 md:px-20 px-10 py-3 max-w-[1300px]  w-full h-[100px]  flex justify-center items-center">
                 <Image
                     src="/images/Group 11303.png"
