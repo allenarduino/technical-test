@@ -6,7 +6,7 @@ import Signup from "../app/auth/signup/page";
 export default function Home() {
   return (
     <main className="flex-grow flex flex-col ">
-      <section className=" md:mt-[50px] w-full text-wrapper flex flex-col justify-center items-center">
+      <section className="  lg:mt-[200px] mt-[120px] w-full text-wrapper flex flex-col justify-center items-center">
         <div className=" sm:w-full w-full flex sm:items-center justify-center ">
           <h2 className="font-[400] font-sans text-[20px] font-medium   leading-loose">What's your goal with Franchain?</h2>
         </div>
