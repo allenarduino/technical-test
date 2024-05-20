@@ -26,11 +26,11 @@ const Description: React.FC<DescriptionProps> = () => {
                         height="0"
                         sizes="100vw"
                         alt="screen-image"
-                        className=" absolute lg:w-[80%] rounded-[12.75px]  w-[70%] h-[100%] min-w-[300px]  lg:max-w-[400px] xl:max-w-[500px] max-w-[364px] cols-span-1  "
+                        className=" absolute lg:w-[80%] rounded-[12.75px]  w-[70%] h-[100%] xs:min-w-[300px] min-w-[10px]  lg:max-w-[400px] xl:max-w-[500px] max-w-[364px] cols-span-1  "
 
 
                     />
-                    <div className="bg-custom-gradient2 min-w-[300px] lg:max-w-[400px] xl:max-w-[500px] max-w-[364px] lg:w-[80%] w-[70%] rounded-lg z-10 h-[100px] absolute bottom-0 px-[12px] pb-[12px] flex flex-col justify-end">
+                    <div className="bg-custom-gradient2 xs:min-w-[300px] min-w-[10px] lg:max-w-[400px] xl:max-w-[500px] max-w-[364px] lg:w-[80%] w-[70%] rounded-lg z-10 h-[100px] absolute bottom-0 px-[12px] pb-[12px] flex flex-col justify-end">
                         <p className="text-white font-[500]">Alexandra Miller</p>
                         <p className="text-white font-[500]">Founder @ EL&N London</p>
                     </div>
