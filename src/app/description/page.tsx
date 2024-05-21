@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer/Footer';
 import '../../../src/app/globals.css';
 
-interface DescriptionProps {}
+interface DescriptionProps { }
 
 const Description: React.FC<DescriptionProps> = () => {
   return (

@@ -68,25 +68,25 @@ const Signup: React.FC<SignupProps> = () => {
                             <p className='py-4'>Last name</p>
                             <input
                                 type='text'
-                                className='w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-2 md:py-4  transition hover:bg-opacity-90'
+                                className='w-full py-2 md:py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 transition hover:bg-opacity-90'
                             />
 
                             <p className='py-4'>Business name and HQ location</p>
                             <input
                                 type='text'
-                                className='w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-2 md:py-4  transition hover:bg-opacity-90'
+                                className='w-full py-2 md:py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 transition hover:bg-opacity-90'
                             />
 
                             <p className='py-4'>Work email</p>
                             <input
                                 type='email'
-                                className='w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-2 md:py-4  transition hover:bg-opacity-90'
+                                className='w-full py-2 md:py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300  transition hover:bg-opacity-90'
                             />
 
                             <p className='py-4'>Password</p>
                             <input
                                 type='password'
-                                className='w-full py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300 py-2 md:py-4  transition hover:bg-opacity-90'
+                                className='w-full py-2 md:py-4 pl-3 text-gray-500 text-[20px] rounded-md border-[1px] border-gray-300   transition hover:bg-opacity-90'
                             />
 
                             <p className='py-4 text-red-500'>
