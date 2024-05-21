@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-min-height: 100vh;
-position: relative;
+body {
+  min-height: 100vh;
+  position: relative;
 }
 
-
-main{
-    padding-bottom:20px;
+main {
+  padding-bottom: 20px;
 }
