@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
-//import "../../../src/app/globals.css";
 import Image from "next/image";
 
 
 interface LoginProps { }
 
 const Login: React.FC<LoginProps> = () => {
+    const [isMounted, setIsMounted] = React.useState(false);
+
+
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">

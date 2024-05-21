@@ -7,6 +7,10 @@ import Image from "next/image";
 interface CheckEmailProps { }
 
 const CheckEmail: React.FC<CheckEmailProps> = () => {
+
+
+
+
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
@@ -67,6 +71,7 @@ const CheckEmail: React.FC<CheckEmailProps> = () => {
 
 
             </div>
+
 
 
 

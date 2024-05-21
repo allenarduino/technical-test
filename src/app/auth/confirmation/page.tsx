@@ -7,6 +7,9 @@ import Image from "next/image";
 interface ConfirmationProps { }
 
 const Confirmation: React.FC<ConfirmationProps> = () => {
+    const [isMounted, setIsMounted] = React.useState(false);
+
+
     return (
         <>
             <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">

@@ -7,8 +7,10 @@ import Image from "next/image";
 interface PasswordResetProps { }
 
 const PasswordReset: React.FC<PasswordResetProps> = () => {
-    return (
 
+
+
+    return (
         <div className=" md:w-full min-h-[100vh] grid lg:grid-cols-2 grid-cols-1 lg:gap-12 relative">
             <div
                 className="h-full w-full xl:flex lg:block justify-center lg:justify-end hidden"
